@@ -1,10 +1,12 @@
 import csv
 from robinhood import Robinhood
-from order_utils import *
+from orderledger import OrderLedger
 
 rb = Robinhood()
 rb.login(username="suhang3240", password="*Sqwer1234")
-orders = get_all_order_details(rb)
+ol = OrderLedger(rb)
+
+orders = ol.get_all_orders()
 
 keys = ['side', 'symbol', 'shares', 'price', 'date', 'state']
 with open('orders.csv', 'w') as output_file:
