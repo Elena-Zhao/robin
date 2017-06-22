@@ -87,7 +87,6 @@ class Robinhood:
             "User-Agent": "Robinhood/823 (Linux; Android 4.0.1; MI-ONEPlus)"
         }
         self.session.headers = self.headers
-#            "User-Agent": "Robinhood/823 (iPhone; iOS 7.1.2; Scale/2.00)"
 
     def login_prompt(self): #pragma: no cover
         """Prompts user for username and password and calls login()."""
