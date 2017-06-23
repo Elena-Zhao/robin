@@ -10,7 +10,7 @@ def print_pnl(pnls):
 
 
 rb = Robinhood()
-rb.login(username="suhang3240", password="*Sqwer1234")
+rb.login(username="***", password="***")
 order_reader = OrderReader()
 order_reader.init_firstrade('firstrade.csv')
 #order_reader.init_robinhood_from_client(rb)
